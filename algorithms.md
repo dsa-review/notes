@@ -91,13 +91,23 @@ Find the time and space complexity for the following algorithms. Use Big-O notat
     }
 ```
 
-2. Find the sum of two values.
+<details>
+  <summary>Solution</summary>
+  <p>O(n) - linear time</p>
+</details>
+
+1. Find the sum of two values.
 
 ```java
     public int findSum(int a, int b) {
         return a + b;
     }
 ```
+
+<details>
+  <summary>Solution</summary>
+  <p>O(1) - constant time</p>
+</details>
 
 
 3. Find the sum and product of an array.
@@ -116,7 +126,12 @@ Find the time and space complexity for the following algorithms. Use Big-O notat
     }
 ```
 
-4. Print array values and constant set of numbers.
+<details>
+  <summary>Solution</summary>
+  <p>O(n) - linear time. Even though, we loop through the array twice, O(n) + O(n) is still represented as O(n)</p>
+</details>
+
+1. Print array values and constant set of numbers.
 ```java
     void printArrayValues(int[] arr) {
         for(int a : arr) {
@@ -127,6 +142,11 @@ Find the time and space complexity for the following algorithms. Use Big-O notat
         }
     }
 ```
+
+<details>
+  <summary>Solution</summary>
+  <p>O(n) - linear time. The second iteration will be the same despite the size of the input. O(n) + O(1000000) is still represented as O(n)</p>
+</details>
 
 5. Print array values and constant set of numbers for each number.
 ```java
@@ -140,6 +160,30 @@ Find the time and space complexity for the following algorithms. Use Big-O notat
         
     }
 ```
+
+<details>
+  <summary>Solution</summary>
+  <p>O(n) - linear time. It doesn't matter how many tasks we need to do per each n value, as long as it grows consistently for each value of n, the growth is linear.</p>
+</details>
+
+
+6. Print every possible pair of numbers in an array.
+```java 
+    void printPairs(int[] arr){
+        for (int i = 0; i < arr.length; i++) {
+            for (int j = 0; j < arr.length; j++) {
+                System.out.println(arr[i] + ", " + arr[j]);
+            }
+        }
+    }
+
+```
+
+<details>
+  <summary>Solution</summary>
+  <p>O(n^2) - quadratic time. Iterating over the array of size n once, and performing a unit of work for each iteration would be O(n). In this case, we are doing O(n) for every element in the array: O(n)*O(n) -> O(n^2)</p>
+</details>
+
 
 <!-- 
 https://kodr.me/en/big-o-examples
