@@ -133,15 +133,15 @@ A linked list is a linear node based data structure. The linked list stores a re
 
 
 ## Queues 
-A queue is a data structure used for data processing, typically using the first in last out (LIFO) policy. In Java, the Queue interface contains the methods `add(E e)`, `remove()`, and `element()` to insert an element to the end of the queue, remove an element from the head of the queue, and to return but not remove the head of the queue, respectively. These three methods also have three equivalent methods `offer(E e)`, `poll()`, and `peek()`, which behave similarly but return a special value (e.g. null), when unexpected behavior occurs rather than throw an exception. 
+A queue is a data structure used for data processing, typically using the first in first out (FIFO) policy. In Java, the Queue interface contains the methods `add(E e)`, `remove()`, and `element()` to insert an element to the end of the queue, remove an element from the head of the queue, and to return but not remove the head of the queue, respectively. These three methods also have three equivalent methods `offer(E e)`, `poll()`, and `peek()`, which behave similarly but return a special value (e.g. null), when unexpected behavior occurs rather than throw an exception. 
 
 A queue operates unidirectionally; one end of the queue will always be the head and one end of the queue will always be the tail. A deque, short for "double ended queue," supports insertion and removal at both ends. A common implementation of both the Queue and Deque interface is a LinkedList. If we need an array backed structure to operate as a Queue or Deque, Java has an ArrayDeque.
 
-While the traditional processing order of a queue is LIFO, they don't always need to be. Java's `PriorityQueue` allows us to define a more specific processing order for our data, based on the implementation of the Comparable or Comparator interface. A PriorityQueue is based off of a priority heap, a type of tree-like data structure.
+While the traditional processing order of a queue is FIFO, they don't always need to be. Java's `PriorityQueue` allows us to define a more specific processing order for our data, based on the implementation of the Comparable or Comparator interface. A PriorityQueue is based off of a priority heap, a type of tree-like data structure.
 
 
 ## Stacks
-A stack is a data structure used for first in last out (FIFO) data processing. Browser history is a good application of a stack. When you navigate to a new web page, you expect that your browser keeps track of your navigation history. When you click on the back button, you want the browser to navigate to the last page
+A stack is a data structure used for last in first out (LIFO) data processing. Browser history is a good application of a stack. When you navigate to a new web page, you expect that your browser keeps track of your navigation history. When you click on the back button, you want the browser to navigate to the last page
 
 While there is a `Stack` class in Java, it inherits from the `Vector` class, which has become obsolete in favor of other Collections. Any implementation of `Dequeue`, such as `ArrayDequeue` or `LinkedList`, will provide you the needed functionality for FIFO data processing. 
 
