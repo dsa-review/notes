@@ -141,9 +141,9 @@ While the traditional processing order of a queue is FIFO, they don't always nee
 
 
 ## Stacks
-A stack is a data structure used for last in first out (LIFO) data processing. Browser history is a good application of a stack. When you navigate to a new web page, you expect that your browser keeps track of your navigation history. When you click on the back button, you want the browser to navigate to the last page
+A stack is a data structure used for last in first out (LIFO) data processing. Browser history is a good application of a stack. When you navigate to a new web page, you expect that your browser keeps track of your navigation history. When you click on the back button, you want the browser to navigate to the last page.
 
-While there is a `Stack` class in Java, it inherits from the `Vector` class, which has become obsolete in favor of other Collections. Any implementation of `Dequeue`, such as `ArrayDequeue` or `LinkedList`, will provide you the needed functionality for FIFO data processing. 
+While there is a `Stack` class in Java, it inherits from the `Vector` class, which has become obsolete in favor of other Collections. Any implementation of `Deque`, such as `ArrayDeque` or `LinkedList`, will provide you the needed functionality for FIFO data processing. 
 
 Stacks are also relevant to us because part of Java's internal memory management uses a stack. When different method are invoked, a new stack frame is added to the top of the stack. This stack frame contains all of the local variables declared in that method. When the method completes, the stack frame pops off of the top of the stack and the previous stack frame becomes relevant. For more on this, see [java-memory-management.md](./java-memory-management.md).
 
