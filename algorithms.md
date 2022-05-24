@@ -184,16 +184,61 @@ Find the time and space complexity for the following algorithms. Use Big-O notat
   <p>O(n^2) - quadratic time. Iterating over the array of size n once, and performing a unit of work for each iteration would be O(n). In this case, we are doing O(n) for every element in the array: O(n)*O(n) -> O(n^2)</p>
 </details>
 
+## Types of Algorithms
+
+### Recursive Algorithms
+
+Recursion is the process of breaking down a larger problem into smaller instances of the same problem. We are able to determine solutions to the smaller instances and use them to build a larger solution for the problem as whole.  Recursion in Java involves a method calling itself.  In order for the method to terminate, we need to define one or more base cases. 
+
+For example, lets say we wanted to list all of the files in a file directory. As we list the files, we may come across a subdirectory. We now are faced with the same problem, and begin the process again. We continue this process until we have listed all of the files in the directory and all subdirectories.
+
+We can see another example of recursion if we readdress the binary search algorithm we saw previously.
+
+#### Iterative Binary Search
+```java 
+    public int search(int arr[], int x) {
+        int l = 0, r = arr.length - 1;
+
+        while (l <= r) {
+            int m = l + (r - l) / 2;
+
+            if (arr[m] == x)
+                return m;
+
+            if (arr[m] < x)
+                l = m + 1;
+            else
+                r = m - 1;
+        }
+        return -1;
+    }
+```
+
+#### Recursive Binary Search
+```java
+    int binarySearch(int arr[], int l, int r, int x){
+        if (r >= l) {
+            int mid = l + (r - l) / 2;
+ 
+            if (arr[mid] == x){
+                return mid;
+            }
+            if (arr[mid] > x){
+                return binarySearch(arr, l, mid - 1, x);
+            }
+            return binarySearch(arr, mid + 1, r, x);
+        }
+        return -1;
+    }
+```
+
+While recursion can provide an elegant strategy for solving an issue that may otherwise be complicated to solve iteratively, it is not always the best option. Both the iterative solution and the recursive solution above have a time complexity of O(n).  In terms of space complexity, however, the iterative solution is O(1) and the recursive solution is O(log n).  With recursion, each method call creates a new call stack where all of the variables of the method need be re-declared.  If we have n recursive method calls, we need n times the memory to complete the task. If we have log n recursive method calls, we need log n times the memory to complete the task.
+
 
 <!-- 
-https://kodr.me/en/big-o-examples
-
 # Types of Algorithms
-DS&A: Recursive algorithms
 DS&A: Greedy Algorithms
 
-DS&A: Depth-First Searching
-DS&A: Breadth-First Searching
 DS&A: Branch & Bound Algorithms
 DS&A: Dynamic Programming
 DS&A: Divide & Conquer Algorithms -->
