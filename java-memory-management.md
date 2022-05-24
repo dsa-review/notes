@@ -9,26 +9,26 @@ Java is always pass by value, meaning when a variable is passed into a method, t
 #### Pass by value with primitives
 
 
-![Pass by value demonstrated with a primitive - img 1](./pass-by-value-images/pass-by-value-example-1-img-1.PNG)
+![Pass by value demonstrated with a primitive - img 1](./images/pass-by-value/pass-by-value-example-1-img-1.PNG)
 
-![Pass by value demonstrated with a primitive - img 2](./pass-by-value-images/pass-by-value-example-1-img-2.PNG))
+![Pass by value demonstrated with a primitive - img 2](./images/pass-by-value/pass-by-value-example-1-img-2.PNG))
 
-![Pass by value demonstrated with a primitive - img 3](./pass-by-value-images/pass-by-value-example-1-img-3.PNG))
+![Pass by value demonstrated with a primitive - img 3](./images/pass-by-value/pass-by-value-example-1-img-3.PNG))
 
-![Pass by value demonstrated with a primitive - img 4](./pass-by-value-images/pass-by-value-example-1-img-4.PNG))
+![Pass by value demonstrated with a primitive - img 4](./images/pass-by-value/pass-by-value-example-1-img-4.PNG))
 
-![Pass by value demonstrated with a primitive - img 5](./pass-by-value-images/pass-by-value-example-1-img-5.PNG))
+![Pass by value demonstrated with a primitive - img 5](./images/pass-by-value/pass-by-value-example-1-img-5.PNG))
 
 #### Pass by value with reference types 
 
-![Pass by value demonstrated with an object - img 1](./pass-by-value-images/pass-by-value-example-1-user-class.PNG)
+![Pass by value demonstrated with an object - img 1](./images/pass-by-value/pass-by-value-example-1-user-class.PNG)
 
-![Pass by value demonstrated with an object - img 1](./pass-by-value-images/pass-by-value-example-2-img-1.PNG)
+![Pass by value demonstrated with an object - img 1](./images/pass-by-value/pass-by-value-example-2-img-1.PNG)
 
-![Pass by value demonstrated with an object - img 2](./pass-by-value-images/pass-by-value-example-2-img-2.PNG)
+![Pass by value demonstrated with an object - img 2](./images/pass-by-value/pass-by-value-example-2-img-2.PNG)
 
-![Pass by value demonstrated with an object - img 3](./pass-by-value-images/pass-by-value-example-2-img-3.PNG)
+![Pass by value demonstrated with an object - img 3](./images/pass-by-value/pass-by-value-example-2-img-3.PNG)
 
-![Pass by value demonstrated with an object - img 4](./pass-by-value-images/pass-by-value-example-2-img-4.PNG)
+![Pass by value demonstrated with an object - img 4](./images/pass-by-value/pass-by-value-example-2-img-4.PNG)
 
-![Pass by value demonstrated with an object - img 5](./pass-by-value-images/pass-by-value-example-2-img-5.PNG)
+![Pass by value demonstrated with an object - img 5](./images/pass-by-value/pass-by-value-example-2-img-5.PNG)

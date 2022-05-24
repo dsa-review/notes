@@ -145,7 +145,7 @@ A stack is a data structure used for first in last out (FIFO) data processing. B
 
 While there is a `Stack` class in Java, it inherits from the `Vector` class, which has become obsolete in favor of other Collections. Any implementation of `Dequeue`, such as `ArrayDequeue` or `LinkedList`, will provide you the needed functionality for FIFO data processing. 
 
-Stacks are also relevant to us because part of Java's internal memory management uses a stack. When different method are invoked, a new stack frame is added to the top of the stack. This stack frame contains all of the local variables declared in that method. When the method completes, the stack frame pops off of the top of the stack and the previous stack frame becomes relevant.
+Stacks are also relevant to us because part of Java's internal memory management uses a stack. When different method are invoked, a new stack frame is added to the top of the stack. This stack frame contains all of the local variables declared in that method. When the method completes, the stack frame pops off of the top of the stack and the previous stack frame becomes relevant. For more on this, see [java-memory-management.md](./java-memory-management.md);
 
 <!--
 ## Maps
