@@ -189,7 +189,7 @@ Find the time and space complexity for the following algorithms. Use Big-O notat
 
 ### Recursive Algorithms
 
-Recursion is the process of breaking down a larger problem into smaller instances of the same problem. We are able to determine solutions to the smaller instances and use them to build a larger solution for the problem as whole.  Recursion in Java involves a method calling itself.  In order for the method to terminate, we need to define one or more base cases. 
+Recursion is the process of breaking down a larger problem into smaller instances of the same problem. We are able to determine solutions to the smaller instances and use them to determine a larger solution.  Recursion in Java involves a method calling itself.  In order for the method to terminate, we need to define one or more base cases. 
 
 For example, lets say we wanted to list all of the files in a file directory. As we list the files, we may come across a subdirectory. We now are faced with the same problem, and begin the process again. We continue this process until we have listed all of the files in the directory and all subdirectories.
 
@@ -254,7 +254,7 @@ The recursive implementation of the binary search is not. While recursion is use
 
 ### Greedy Algorithms
 
-A greedy algorithm is an algorithm that makes locally optimal choices at each stage in the hope of finding the globally optimal solution. Many times a greedy algorithm finds the globally optimal solution
+A greedy algorithm is an algorithm that makes locally optimal choices at each stage in the hope of finding the globally optimal solution. In some cases, greedy algorithms find the globally optimal solution. However, it often does not guarantee it, as they often do not exhaust all of the possible solutions. 
 
 --- 
 
