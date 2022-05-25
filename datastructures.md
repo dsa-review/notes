@@ -200,7 +200,7 @@ Trees are traversed using two strategies:
 2. Depth-first traversal
 
 #### Breadth-first traversal
-Breadth first traversal focuses on traversing from right to left, for each level of a tree.
+Breadth first traversal focuses on traversing from left to right, for each level of a tree.
 
 <img src="./images/datastructures/bfs.png" alt="breadth first traversal" width="800"/>
 
