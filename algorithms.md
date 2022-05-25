@@ -276,6 +276,8 @@ The greedy approach is to calculate the value per weight, and add the item with 
 
 Start with item 1 because it has the most value per kg. There are 10 kg available so we put 10 kg of item 1 in the knapsack. The knapsack has a capacity now of 40 kg. Item 2 has the next highest value per kg. There are 60 kg available of item 2, so the remaining capacity (40 kg) is filled with item 2. We use all of item 1 and 2/3 of item 2 to fill the backpack with the highest value possible.
 
+See an example of this algorithm written in Java [here](https://www.geeksforgeeks.org/fractional-knapsack-problem/).
+
 ---
 
 Another example of a greedy algorithm is Dijkstra's algorithm. Dijkstra's algorithm is a well known algorithm for determining the shortest distance from one node to every other node in a graph.
