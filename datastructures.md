@@ -238,7 +238,7 @@ int[][] socialMediaAdjacencyMatrix = {
 ```
 
 ### Adjacency List
-An adjacency list...
+An adjacency list is another way we can represent a graph data structure. An adjacency list allows us to maintain a list for each vertex. The list corresponds to the other vertexes that it shares an edge with. 
 
 <img src="./images/datastructures/adjacency-list.png" alt="adjacency matrix" width="600"/>
 
